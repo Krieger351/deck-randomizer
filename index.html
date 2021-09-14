@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deck Randomizer</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  </head>
+  <body class="container">
+    <h1>Deck Randomizer</h1>
+    <h2>Instructions</h2>
+    <p>The fixed list of cards should be in the main deck. The variable list of cards should be in the sideboard. This uses MTGO exported decklists for the input.</p>
+    <main class="row">
+      <section class="col-md">
+        <label class="form-label" for="input">Deck List</label>
+        <textarea class="form-control fixed" id="input">1 Alrund's Epiphany
+1 Arcane Signet
+1 Arid Mesa
+1 Azusa, Lost but Seeking
+1 Badlands
+1 Bayou
+1 Bloodstained Mire
+1 Bower Passage
+1 Bringer of the Black Dawn
+1 Buried Ruin
+1 Chromatic Lantern
+1 Command Tower
+1 Conjurer's Closet
+1 Counterspell
+1 Cultivate
+1 Decimate
+1 Defense of the Heart
+1 Demonic Tutor
+1 Dragon Tempest
+1 Dryad of the Ilysian Grove
+1 Exploration
+1 Fellwar Stone
+1 Flooded Strand
+1 Garruk's Uprising
+1 Golos, Tireless Pilgrim
+1 Hunting Grounds
+1 Illusionist's Bracers
+1 Insight
+1 Into the North
+1 Keep Safe
+1 Kiora, Behemoth Beckoner
+1 Kodama's Reach
+1 Leyline of Anticipation
+1 Lifecrafter's Bestiary
+1 Lurking Predators
+1 Mana Confluence
+1 Mana Reflection
+1 Mana Severance
+1 Marsh Flats
+1 Misty Rainforest
+1 Plateau
+1 Polluted Delta
+1 Prismatic Lens
+1 Quicksilver Amulet
+1 Rampant Growth
+1 Rejuvenating Springs
+1 Remember the Fallen
+1 Revoke Existence
+1 Rhystic Study
+1 Rhythm of the Wild
+1 Sarkhan Unbroken
+1 Sarkhan Vol
+1 Savannah
+1 Scalding Tarn
+1 Scrubland
+1 Seedborn Muse
+1 Slayers' Stronghold
+1 Smothering Tithe
+1 Snow-Covered Forest
+1 Snow-Covered Island
+1 Snow-Covered Mountain
+1 Snow-Covered Plains
+1 Snow-Covered Swamp
+1 Stomping Ground
+1 Taiga
+1 Talisman of Curiosity
+1 Temur Ascendancy
+1 The World Tree
+1 Time Wipe
+1 Tropical Island
+1 Tuktuk Rubblefort
+1 Tundra
+1 Underground Sea
+1 Verdant Catacombs
+1 Volcanic Island
+1 Wilderness Reclamation
+1 Windswept Heath
+1 Wooded Foothills
+
+SIDEBOARD:
+1 Atarka, World Render
+1 Blade Historian
+1 Bladewing the Risen
+1 Blightsteel Colossus
+1 Darksteel Colossus
+1 Double Major
+1 Dream Trawler
+1 Elvish Piper
+1 Etali, Primal Storm
+1 Ever After
+1 Genesis Ultimatum
+1 Glorious Protector
+1 Gyre Sage
+1 Intet, the Dreamer
+1 Kaervek the Merciless
+1 Kira, Great Glass-Spinner
+1 Kodama of the East Tree
+1 Kokusho, the Evening Star
+1 Koma, Cosmos Serpent
+1 Krosan Grip
+1 Lathliss, Dragon Queen
+1 Numot, the Devastator
+1 Nyxbloom Ancient
+1 Old Gnawbone
+1 Palladium Myr
+1 Rimescale Dragon
+1 Rishkar's Expertise
+1 Rune-Scarred Demon
+1 Teneb, the Harvester
+1 Thunderbreak Regent
+1 Tireless Tracker
+1 Ulamog, the Infinite Gyre
+1 Unexpected Results
+1 Utvara Hellkite
+1 Varragoth, Bloodsky Sire
+1 Void Winnower
+1 Whirlwind Denial
+1 Wrath of God
+1 Wurmcoil Engine
+1 Zacama, Primal Calamity
+        </textarea>
+      </section>
+      <section class="col-md">
+        <label class="form-label" for="output"> Output </label>
+        <textarea class="form-control fixed" id="output"></textarea>
+      </section>
+    </main>
+    <button id="generate" class="btn btn-primary mt-4">Generate List</button>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
